@@ -147,3 +147,14 @@ h2{
     margin-bottom: 5px;
     color: var(--primaria);
 }
+
+.caixa-direitos{
+    background-color: #fff9e6;
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px dashed var(--primaria);
+}
+
+.caixa-ireitos p{
+    margin-bottom: 15px;
+}
