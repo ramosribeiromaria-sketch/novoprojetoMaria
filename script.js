@@ -2,6 +2,7 @@
 let btnAjuda = document.querySelector(".botao-ajuda");
 let btnFechar = document.querySelector(".botao-fechar");
 let modal = document.querySelector(".modal-fundo");
+
 btnAjuda.addEventListener("click", abreModal);
 btnFechar.addEventListener("click", fechaModal);
 
@@ -61,7 +62,7 @@ let texto = conteudo.innerText;
 let fala = new SpeechSynthesisUtterance(texto);
 
 fala.lang = "pt-BR";
-fala.onend= finaliarLeitura;
+fala.onend= finalizarLeitura;
 
 lendo = true
 
@@ -69,5 +70,5 @@ speechSynthesis.cancel();
 speechSynthesis.speak(fala);
 }
 function finalizarLeitura(){
-    lendo=false
+    lendo = false
 }
